@@ -1,0 +1,13 @@
+.sign-up-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* BUTTON */
+
+.sign-up-submit-button {
+	width: 100%;
+}
