@@ -1,14 +1,35 @@
-import "../App.css";
+import "../styles/components/input.css";
 
-interface InputTypes {
-  type: string;
-  name: string;
-  placeholder: string;
+// TYPESCRIPT
+interface InputProps {
+	placeholder: string;
+	htmlFor: string;
+	label: string;
+	type: string;
+	name: string;
+	id: string;
 }
 
-function Input({type, name, placeholder}: InputTypes) {
-return <input className="input-1" type={type} name={name} placeholder={placeholder}/>
-
-};
-
-export default Input;
+export default function Input({
+	placeholder,
+	htmlFor,
+	label,
+	type,
+	name,
+	id,
+}: InputProps) {
+	return (
+		<div className="input-container">
+			<label htmlFor={htmlFor} className="input-label">
+				{label}
+			</label>
+			<input
+				placeholder={placeholder}
+				type={type}
+				name={name}
+				id={id}
+				className="input-field"
+			/>
+		</div>
+	);
+}
