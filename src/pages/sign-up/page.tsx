@@ -17,7 +17,6 @@ export default function SignUp() {
 				{/* INPUT COMPONENTS */}
 				<div className="sign-up-input-container">
 					{/* EMAIL FIELD*/}
-					<div className="sign-up-email-container">
 						<Input
 							placeholder="Email"
 							htmlFor="email"
@@ -26,7 +25,6 @@ export default function SignUp() {
 							name="email"
 							id="email"
 						/>
-					</div>
 					{/* FIRST PASSWORD FIELD */}
 					<div className="sign-up-password-container">
 						<Input
@@ -43,7 +41,6 @@ export default function SignUp() {
 					</div>
 
 					{/* CONFIRM PASSWORD FIELD */}
-					<div className="sign-up-confirm-container">
 						<Input
 							placeholder="Password"
 							htmlFor="password"
@@ -52,7 +49,6 @@ export default function SignUp() {
 							name="password"
 							id="password"
 						/>
-					</div>	
 					</div>
 
 				{/* SUBMIT SIGN UP BUTTON */}
