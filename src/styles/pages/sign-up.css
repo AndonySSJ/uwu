@@ -4,10 +4,69 @@
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	font-family: sans-serif;
+	margin: 15px;
+
 }
 
 /* BUTTON */
 
 .sign-up-submit-button {
 	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+	background-color: black;
+	border-radius: 8px;
+}
+
+
+
+
+.sign-up-form-container{
+	padding-bottom: 4%;
+	margin-top: 5vh;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid blue;
+}
+
+.sign-up-input-container{
+	padding-bottom: 4vh;
+	padding-bottom: 4vh;
+	margin-bottom: 5vh;
+	border: 1px solid #ccc
+	
+}
+
+.sign-up-password-container{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	border: 1px solid red;
+	font-family: Arial, sans-serif;
+	color: ;
+	
+}
+
+.sign-up-confirm-container{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	border: 1px solid red;
+	font-family: Arial, sans-serif;
+}
+
+#password {
+	font-family: Arial, sans-serif;
+	padding: 10px;
+	margin: 10px 0 10px;
+	border-radius: 5px;
+	border:1px solid #D1D1D1;
+	
+}
+
+#email{
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #D1D1D1;
+	border-radius: 5px;
+	
 }

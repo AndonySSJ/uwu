@@ -17,15 +17,16 @@ export default function SignUp() {
 				{/* INPUT COMPONENTS */}
 				<div className="sign-up-input-container">
 					{/* EMAIL FIELD*/}
-					<Input
-						placeholder="Email"
-						htmlFor="email"
-						label="What's your email address?"
-						type="email"
-						name="email"
-						id="email"
-					/>
-
+					<div className="sign-up-email-container">
+						<Input
+							placeholder="Email"
+							htmlFor="email"
+							label="What's your email address?"
+							type="email"
+							name="email"
+							id="email"
+						/>
+					</div>
 					{/* FIRST PASSWORD FIELD */}
 					<div className="sign-up-password-container">
 						<Input
@@ -42,15 +43,17 @@ export default function SignUp() {
 					</div>
 
 					{/* CONFIRM PASSWORD FIELD */}
-					<Input
-						placeholder="Password"
-						htmlFor="password"
-						label="Enter your password again"
-						type="password"
-						name="password"
-						id="password"
-					/>
-				</div>
+					<div className="sign-up-confirm-container">
+						<Input
+							placeholder="Password"
+							htmlFor="password"
+							label="Enter your password again"
+							type="password"
+							name="password"
+							id="password"
+						/>
+					</div>	
+					</div>
 
 				{/* SUBMIT SIGN UP BUTTON */}
 				<div className="sign-up-submit-container">
