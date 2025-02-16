@@ -1,5 +1,5 @@
 import Input from "../../components/input";
-import "../../styles/pages/sign-up.css";
+import "../../styles/pages/sign-up/sign-up.css";
 
 export default function SignUp() {
 	return (
@@ -8,7 +8,7 @@ export default function SignUp() {
 			<div className="sign-up-header">
 				<h2>Create an account</h2>
 				<p className="sign-up-redirect-suggestion">
-					Already have an account? <span className="sign-up-link">Sign up</span>
+					Already have an account? <a href="/log-in" className="sign-up-link">Log in</a>
 				</p>
 			</div>
 
