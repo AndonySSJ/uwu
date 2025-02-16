@@ -16,13 +16,6 @@
 
 
 
-.log-in-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
-}
 .log-in-submit-button {
 	margin-top: 8px;
 	font-weight: bold;
@@ -37,12 +30,15 @@
 .log-in-form-container{
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+	max-width: 500px;
+	gap: 40px;
 }
 
 .log-in-input-container{
 	display: flex;
 	flex-direction: column;
-	gap: 50px;
+	gap: 40px;
 	font-family: Arial, sans-serif;
 	
 }
@@ -51,6 +47,8 @@
 .log-in-privacy-policy{
 	cursor: pointer;
 	text-decoration: underline;
+	display: flex;
+	justify-content: end;
 
 }
 

@@ -8,7 +8,7 @@ export default function LogIn() {
             <div className="log-in-header">
                 <h2>Welcome, please login</h2>
                 <p className="log-in-suggestion">
-                    Don't have an account?<a href="/sign-up" className="log-in-link">Sign up</a>
+                    Don't have an account? <a href="/sign-up" className="log-in-link">Sign up</a>
                 </p>
             </div>
             <form className="log-in-form-container">
@@ -23,7 +23,6 @@ export default function LogIn() {
                         type="email"
                         name="email"
                         id="email" />
-                </div>
                 {/* FIRST PASSWORD FIELD */}
                 <div className="log-in-password-container">
                     <Input
@@ -36,6 +35,7 @@ export default function LogIn() {
                     <p className="log-in-privacy-policy">
                         Forgot Password?
                     </p>
+                </div>
                 </div>
                 <div className="log-in-submit-container">
 					<button className="log-in-submit-button" type="submit">
