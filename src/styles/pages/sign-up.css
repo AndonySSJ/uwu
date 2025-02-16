@@ -7,7 +7,8 @@
 }
 
 .sign-up-header {
-  text-align: center;
+	font-family: Arial,sans-serif;
+	text-align: center;
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
@@ -24,23 +25,71 @@
 	flex-direction: column;
 }
 
+
+/*MAIN CONTAINER*/
 .sign-up-input-container{
-	border: 1px solid #ccc;
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
+	font-family: Arial, sans-serif;
+	
 }
 
+
+/*PASSWORD CONTAINER*/
 .sign-up-password-container{
-	border: 1px solid red;
 	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+/*BOLD TERMS AND CONDITIONS*/
+
+.sign-up-terms-service{
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: underline;
+
+}
+
+.sign-up-privacy-policy{
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: underline;
+
+}
+
+.sign-up-terms{
+	font-family: Arial, sans-serif;
+	font-size: small;
+	gap:5px;
+	margin-top: 35px;
+
 }
 
 /* BUTTON */
 .sign-up-submit-button {
+	margin-top: 8px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
 	width: 100%;
-	height: 100%;
+	height: 40px;
 	color: #FFFFFF;
 	background-color: black;
 	border-radius: 8px;
 }
+
+.input-field{
+	height: 40px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 8px;
+}
+
+.input-container{
+	gap: 8px;
+}
+
