@@ -1,10 +1,14 @@
+import { useActionState } from "react";
+
 import Input from "../../components/input";
 import "../../styles/pages/sign-up/sign-up.css";
+import { signUp } from "./actions";
 
 export default function SignUp() {
+  const [state, signUpAction] = useActionState(signUp, undefined);
+
   return (
     <div className="sign-up-container">
-      {/* HEADER */}
       <div className="sign-up-header">
         <h2>Create an account</h2>
         <p className="sign-up-redirect-suggestion">
@@ -16,7 +20,7 @@ export default function SignUp() {
       </div>
 
       {/* MAIN CONTENT */}
-      <form className="sign-up-form-container">
+      <form action={signUpAction} className="sign-up-form-container">
         {/* INPUT COMPONENTS */}
         <div className="sign-up-input-container">
           {/* EMAIL FIELD*/}
@@ -28,7 +32,6 @@ export default function SignUp() {
             name="email"
             id="email"
           />
-          {/* FIRST PASSWORD FIELD */}
           <div className="sign-up-password-container">
             <Input
               placeholder="Enter your password"
@@ -46,11 +49,11 @@ export default function SignUp() {
           {/* CONFIRM PASSWORD FIELD */}
           <Input
             placeholder="Confirm your password"
-            htmlFor="password"
+            htmlFor="confirmPassword"
             label="Enter your password again"
             type="password"
-            name="password"
-            id="password"
+            name="confirmPassword"
+            id="confirmPassword"
           />
         </div>
 
