@@ -1,8 +1,11 @@
 import { createRoot } from "react-dom/client";
+
 import SignUp from "./pages/sign-up/page";
 import "./styles/index.css";
 import { BrowserRouter, Route, Routes } from "react-router";
+
 import LogIn from "./pages/log-in/page";
+
 const rootElement = document.getElementById("root");
 
 // Check if the root element exists.

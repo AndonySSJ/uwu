@@ -8,8 +8,8 @@
     "dev": "rsbuild dev --open",
     "preview": "rsbuild preview",
     "clean": "rm -rf dist/ node_modules/",
-    "lint": "eslint .",
-    "format": "prettier --write ."
+    "vegetta": "eslint .",
+    "goku": "prettier --write ."
   },
   "dependencies": {
     "react": "^19.0.0",
